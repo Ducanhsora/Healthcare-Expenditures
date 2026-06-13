@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 1 -C -R 0.0 -num-decimal-places 4
+Relation:     insurance_train
+Instances:    669
+Attributes:   9
+              age
+              bmi
+              children
+              sex_male
+              smoker_yes
+              region_northwest
+              region_southeast
+              region_southwest
+              charges
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+charges =
+
+    260.2223 * age +
+    305.0483 * bmi +
+    265.5756 * children +
+   -227.2034 * sex_male +
+  23339.3437 * smoker_yes +
+   -307.918  * region_northwest +
+  -1366.1599 * region_southeast +
+   -378.0387 * region_southwest +
+ -10844.2724
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.8626
+Mean absolute error                   4318.1416
+Root mean squared error               6350.0709
+Relative absolute error                 47.2827 %
+Root relative squared error             50.6408 %
+Total Number of Instances              669     
+

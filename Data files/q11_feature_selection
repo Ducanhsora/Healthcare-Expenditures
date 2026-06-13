@@ -1,0 +1,44 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.functions.LinearRegression -F 5 -T 0.01 -R 1 -E DEFAULT -- -S 1 -C -R 0.0 -num-decimal-places 4
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     insurance_train
+Instances:    669
+Attributes:   9
+              age
+              bmi
+              children
+              sex_male
+              smoker_yes
+              region_northwest
+              region_southeast
+              region_southwest
+              charges
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 41
+	Merit of best subset found: 5837.999
+
+Attribute Subset Evaluator (supervised, Class (numeric): 9 charges):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.functions.LinearRegression
+	Scheme options: -S 1 -C -R 0.0 -num-decimal-places 4 
+	Subset evaluation: RMSE
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 1,2,3,5,7 : 5
+                     age
+                     bmi
+                     children
+                     smoker_yes
+                     region_southeast
+
